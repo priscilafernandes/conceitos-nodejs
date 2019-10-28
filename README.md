@@ -14,7 +14,7 @@ Aplicação para armazenar projetos e suas tarefas utilizando [Express](https://
 
 - `POST /projects/:id/tasks`: Esta rota recebe um campo `title` e armazena uma nova tarefa no array de tarefas de um projeto específico escolhido através do `id` presente nos parâmetros da rota.
 
-##### Exemplo
+#### Exemplo
 
 Chamando a rota `POST /projects` repassando `{ id: 1, title: 'Novo projeto' }` e a rota `POST /projects/1/tasks` com `{ title: 'Nova tarefa' }`, o array de projetos fica da seguinte forma:
 
@@ -32,4 +32,4 @@ Chamando a rota `POST /projects` repassando `{ id: 1, title: 'Novo projeto' }` e
 
 - `checkIdExists`: é utilizado em todas rotas que recebem o ID do projeto nos parâmetros da URL e verifica se o projeto com aquele ID existe. Se não existir retorna o erro *"Id não existe"*;
 
-- Middleware global: imprime (`console.log`) uma contagem de quantas requisições foram feitas na aplicação até então;
+- Middleware global: imprime (`console.log`) uma contagem de quantas requisições foram feitas na aplicação até então.
